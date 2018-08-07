@@ -14,10 +14,7 @@ Rook::~Rook(){
 }
 
 bool Rook::isRookValidMove(int rank_distance, int file_distance){
-  if(isDiagonalMove(rank_distance,file_distance))
-    return false;
-
-  return true;
+  return isDiagonalMove(rank_distance,file_distance)
 }
 
 // ################ note: The whole function acts very similar to Queen move except Rook does not have Diagonal move
