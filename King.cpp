@@ -36,11 +36,8 @@ bool King::isValidMoveIndividualPiece(Position *next_position){
 
 bool King::isMoveOneAnyDirection(int rank_distance, int file_distance){
 
-  if(  (abs(rank_distance) >= 0 && abs(rank_distance)<= 1)
-       &&(abs(file_distance) >= 0 && abs(file_distance) <= 1)){
-    return true;
-  }
-  return false;
+  return (  (abs(rank_distance) >= 0 && abs(rank_distance)<= 1)
+       &&(abs(file_distance) >= 0 && abs(file_distance) <= 1)    )
 }
 
 bool King::isInCheck(){
